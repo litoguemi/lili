@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      LILI
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-text>
+      Hola mi nombre es LILI, en que te puedo ayudar?
+    </ion-text>
+    <ion-icon name="aperture-sharp"></ion-icon>
+  </ion-item>
+  <app-entrada [session] = "this.sessionId"></app-entrada>
+  <br>
+  <app-salidas [texts] = "this.envios"></app-salidas>
+</ion-content>

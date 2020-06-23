@@ -1,0 +1,10 @@
+<div>
+  <ion-card>
+    <ion-item>
+      <ion-input [(ngModel)]="componentText"></ion-input>
+    </ion-item>
+    <ion-button [disabled] = "componentText.length < 1" (click)="pregunta()">
+      <ion-icon slot="icon-only" name="send"></ion-icon>
+    </ion-button>
+  </ion-card>
+</div>
